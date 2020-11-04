@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="xtv-yU-ZtS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbc" translatesAutoresizingMaskIntoConstraints="NO" id="WRp-DZ-p63">
+                                <rect key="frame" x="123" y="44" width="168" height="59"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l75-4X-ktL">
+                                <rect key="frame" x="20" y="61" width="33" height="26"/>
+                                <state key="normal" title="NavMenuBtn" image="MenuBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeD-kk-lAQ">
+                                <rect key="frame" x="361" y="61" width="33" height="26"/>
+                                <state key="normal" title="RefreshBtn" image="RefreshBtn."/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="updatedWheater" translatesAutoresizingMaskIntoConstraints="NO" id="A6Z-Tw-SXB">
+                                <rect key="frame" x="20" y="154" width="374" height="179"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zF-qO-jcF">
+                                <rect key="frame" x="20" y="341" width="87" height="334"/>
+                                <state key="normal" title="HourlyBtn1" image="1Houlry"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKj-jb-qOo">
+                                <rect key="frame" x="116.5" y="341" width="87" height="334"/>
+                                <state key="normal" title="HourlyBtn2" image="2Hourly"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNf-hY-d1j">
+                                <rect key="frame" x="211.5" y="341" width="87" height="334"/>
+                                <state key="normal" title="HourlyBtn3" image="3Hourly"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihq-ld-H0X">
+                                <rect key="frame" x="307" y="341" width="87" height="334"/>
+                                <state key="normal" title="HourlyBtn4" image="4Hourly"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcN-YU-QkQ">
+                                <rect key="frame" x="147" y="683" width="120" height="155"/>
+                                <state key="normal" title="NextdayBtn1" image="Sunday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb4-Mg-u7a">
+                                <rect key="frame" x="274" y="683" width="120" height="155"/>
+                                <state key="normal" title="NextdayBtn2" image="Monday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyk-YM-NJm">
+                                <rect key="frame" x="20" y="683" width="120" height="155"/>
+                                <state key="normal" title="TodayBtn" image="Today"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l75-4X-ktL" secondAttribute="bottom" constant="775" id="0i2-3g-i0I"/>
+                            <constraint firstItem="nyk-YM-NJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1n2-7J-bYq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qeD-kk-lAQ" secondAttribute="bottom" constant="775" id="1uC-l2-HkK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vNf-hY-d1j" secondAttribute="bottom" constant="187" id="4ix-8F-Mj2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A6Z-Tw-SXB" secondAttribute="bottom" constant="529" id="6aX-f2-KeH"/>
+                            <constraint firstItem="A6Z-Tw-SXB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="7LH-7z-O4K"/>
+                            <constraint firstAttribute="bottom" secondItem="xtv-yU-ZtS" secondAttribute="bottom" constant="34" id="7VB-kJ-XvA"/>
+                            <constraint firstItem="GKj-jb-qOo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="7Vq-E6-7jo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nyk-YM-NJm" secondAttribute="trailing" constant="274" id="8CY-MI-De6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qeD-kk-lAQ" secondAttribute="trailing" constant="20" id="9HB-jg-5D6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vNf-hY-d1j" secondAttribute="trailing" constant="115.5" id="9L9-TS-aO1"/>
+                            <constraint firstItem="qeD-kk-lAQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="361" id="A12-C2-DOR"/>
+                            <constraint firstItem="vNf-hY-d1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="211.5" id="Bw3-L7-8q2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ihq-ld-H0X" secondAttribute="trailing" constant="20" id="CVS-It-aTg"/>
+                            <constraint firstItem="WRp-DZ-p63" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="DA7-fU-TM2"/>
+                            <constraint firstItem="nyk-YM-NJm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="639" id="DK9-n8-nQl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OcN-YU-QkQ" secondAttribute="trailing" constant="147" id="Dvg-tm-oT1"/>
+                            <constraint firstItem="WRp-DZ-p63" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F2Q-zG-cEm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6Z-Tw-SXB" secondAttribute="trailing" constant="20" id="Fde-aZ-AbV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OcN-YU-QkQ" secondAttribute="bottom" constant="24" id="LBu-eX-PS1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3zF-qO-jcF" secondAttribute="trailing" constant="307" id="MiH-qf-do9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nyk-YM-NJm" secondAttribute="bottom" constant="24" id="NIi-DS-r42"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GKj-jb-qOo" secondAttribute="trailing" constant="210.5" id="Ndu-zU-tMf"/>
+                            <constraint firstItem="vNf-hY-d1j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="Nuo-mz-spV"/>
+                            <constraint firstItem="l75-4X-ktL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="SRP-Pm-ibp"/>
+                            <constraint firstItem="OcN-YU-QkQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="639" id="ST4-MF-mxk"/>
+                            <constraint firstItem="xb4-Mg-u7a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="639" id="TKo-5t-eMw"/>
+                            <constraint firstItem="xtv-yU-ZtS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="btD-bz-mpz"/>
+                            <constraint firstItem="qeD-kk-lAQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="cr3-ag-Wje"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRp-DZ-p63" secondAttribute="trailing" constant="123" id="d6E-f1-oKD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xb4-Mg-u7a" secondAttribute="bottom" constant="24" id="fU1-fF-AXv"/>
+                            <constraint firstItem="xtv-yU-ZtS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="fzn-lw-x5u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ihq-ld-H0X" secondAttribute="bottom" constant="187" id="h9g-nC-9Yh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3zF-qO-jcF" secondAttribute="bottom" constant="187" id="hfH-0h-p0o"/>
+                            <constraint firstItem="3zF-qO-jcF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="hha-Ik-6eg"/>
+                            <constraint firstItem="xb4-Mg-u7a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="274" id="hy5-NM-kBb"/>
+                            <constraint firstItem="OcN-YU-QkQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="iye-qn-ajZ"/>
+                            <constraint firstItem="3zF-qO-jcF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jB9-Xf-BrK"/>
+                            <constraint firstItem="l75-4X-ktL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nQh-Fs-Qej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WRp-DZ-p63" secondAttribute="bottom" constant="759" id="sxh-BL-DVi"/>
+                            <constraint firstAttribute="trailing" secondItem="xtv-yU-ZtS" secondAttribute="trailing" id="uSJ-XY-MLX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xb4-Mg-u7a" secondAttribute="trailing" constant="20" id="wTn-7A-AOT"/>
+                            <constraint firstItem="A6Z-Tw-SXB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wgS-47-OCZ"/>
+                            <constraint firstItem="ihq-ld-H0X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="307" id="xh1-fk-NCA"/>
+                            <constraint firstItem="GKj-jb-qOo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116.5" id="xvE-Ex-qSk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GKj-jb-qOo" secondAttribute="bottom" constant="187" id="yLs-I0-nxT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l75-4X-ktL" secondAttribute="trailing" constant="361" id="yw7-bt-N3G"/>
+                            <constraint firstItem="ihq-ld-H0X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="zaq-Um-S1N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1Houlry" width="87" height="334"/>
+        <image name="2Hourly" width="87" height="334"/>
+        <image name="3Hourly" width="87" height="334"/>
+        <image name="4Hourly" width="87" height="334"/>
+        <image name="Background" width="414" height="896"/>
+        <image name="MenuBtn" width="36" height="31"/>
+        <image name="Monday" width="120" height="155"/>
+        <image name="RefreshBtn." width="36" height="31"/>
+        <image name="Sunday" width="120" height="155"/>
+        <image name="Today" width="120" height="155"/>
+        <image name="bbc" width="270" height="69"/>
+        <image name="updatedWheater" width="414" height="164"/>
+    </resources>
+</document>
